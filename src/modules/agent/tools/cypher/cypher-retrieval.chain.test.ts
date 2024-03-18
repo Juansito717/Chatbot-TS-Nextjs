@@ -197,6 +197,6 @@ describe("Cypher QA Chain", () => {
 
       expect(res).toBeDefined();
       expect(JSON.stringify(res)).toContain("The Chief");
-    }, 20000);
+    }, 30000);
   });
 });

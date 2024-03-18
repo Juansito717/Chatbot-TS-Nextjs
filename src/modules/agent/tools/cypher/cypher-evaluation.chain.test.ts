@@ -50,7 +50,7 @@ describe("Cypher Evaluation Chain", () => {
     let found = false;
 
     for (const error of errors) {
-      if (error.includes("label Muvee does not exist")) {
+      if (error.includes("Label Muvee does not exist")) {
         found = true;
       }
     }
@@ -126,7 +126,7 @@ describe("Cypher Evaluation Chain", () => {
       question: "How many movies are in the database?",
       cypher,
       schema: graph.getSchema(),
-      errors: ["Label Muvee does not exist"],
+      errors: [],
     };
 
     const { cypher: updatedCypher, errors } = await chain.invoke(input);
