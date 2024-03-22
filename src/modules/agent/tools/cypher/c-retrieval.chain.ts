@@ -1,12 +1,12 @@
 import { BaseLanguageModel } from "langchain/base_language";
 import { Neo4jGraph } from "@langchain/community/graphs/neo4j_graph";
 import { RunnablePassthrough } from "@langchain/core/runnables";
-import initCypherGenerationChain from "./cypher-generation.chain";
-import initCypherEvaluationChain from "./cypher-evaluation.chain";
+import initCypherGenerationChain from "./c-generation.chain";
+import initCypherEvaluationChain from "./C-evaluation.chain";
 import { saveHistory } from "../../history";
 import { AgentToolInput } from "../../agent.types";
 import { extractIds } from "../../../../utils";
-import initGenerateAuthoritativeAnswerChain from "../../chains/authoritative-answer-generation.chain";
+import initGenerateAuthoritativeAnswerChain from "../../chains/authoritati-answer-g.chain";
 
 // tag::input[]
 type CypherRetrievalThroughput = AgentToolInput & {

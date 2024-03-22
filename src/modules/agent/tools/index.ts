@@ -1,7 +1,7 @@
 import { BaseChatModel } from "langchain/chat_models/base";
 import { Embeddings } from "@langchain/core/embeddings";
 import { Neo4jGraph } from "@langchain/community/graphs/neo4j_graph";
-import initCypherRetrievalChain from "./cypher/cypher-retrieval.chain";
+import initCypherRetrievalChain from "./cypher/c-retrieval.chain";
 import initVectorRetrievalChain from "./vector-retrieval.chain";
 import { DynamicStructuredTool } from "@langchain/community/tools/dynamic";
 import { AgentToolInputSchema } from "../agent.types";
